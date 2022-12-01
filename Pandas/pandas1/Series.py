@@ -32,4 +32,20 @@ print(serie2)
 
 serie3 = pd.Series([123,56543,7654,12,32523],index= ['a','b','c','d','e'])
 print(serie3)
-print(serie3['d'])
+print(serie3['d'])  #A su ves podemos usar las etiquetas generadas para acceder al elemento correspondiente
+
+
+print("------Creando series con diccionarios------")
+#Usar diccionarios para crear series nos permite evitar asignar las etiquetas, ya que
+#los valores correspondientes a las claves se convierten en las etiquetas de la serie
+preciosFrutas = {"manzana":0.20,"pera":0.35,"naranja":1.00,"banana":0.50,"limon":0.10}
+
+serieDict = pd.Series(preciosFrutas)
+print(serieDict)
+
+#Tambien podemos seccionar las series especificando las etiquetas que deseamos tomar
+#Digamos que queremos una serie que solo contenga a manzana, banana y pera. En ese orden.
+#Hariamos esto:
+print("--Serie seccionada por medio de labels--")
+serieDicSeccionada = pd.Series(preciosFrutas,index=["manzana","banana","pera"])
+print(serieDicSeccionada)
