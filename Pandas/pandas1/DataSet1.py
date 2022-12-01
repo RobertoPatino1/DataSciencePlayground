@@ -10,7 +10,26 @@ myVar = pd.DataFrame(myDataset)
 
 #print(myVar)
 
-print("------Creating a series------")
-
+print("------Series------")
+#Una serie es como una columna de una tabla
+#Contiene datos de cualquier tipo
 serie1 = pd.Series(["this","is","a","series"])
 print(serie1)
+
+
+
+print("------Labels------")
+#Inician en 0, se usan para acceder a valores especificos
+#OJO: La indexacion no funciona en su version negativa como en las listas
+print(serie1[3])
+
+
+#Podemos nombrear nuestros propios labels con el argumento index al crear una serie
+#Al argumento index le es asignada una lista con los nombres que tendran los nuevos indices
+
+serie2 = pd.Series(["Honda","Chevrolet","Ferrari"],index=["x","y","z"])
+print(serie2)
+
+serie3 = pd.Series([123,56543,7654,12,32523],index= ['a','b','c','d','e'])
+print(serie3)
+print(serie3['d'])
