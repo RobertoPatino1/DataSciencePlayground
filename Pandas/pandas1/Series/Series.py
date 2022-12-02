@@ -1,14 +1,5 @@
 import pandas as pd
 
-#El numero de elementos en cada renglon del dataset debe ser el mismo
-#para todos los casos
-myDataset = {"cars":["BMW","Ferrari","Chevrolet","Tesla"],
-"passings": [1,2,3,4]
-}
-
-myVar = pd.DataFrame(myDataset)
-
-#print(myVar)
 
 print("------Series------")
 #Una serie es como una columna de una tabla

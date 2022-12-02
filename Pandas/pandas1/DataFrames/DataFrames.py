@@ -27,3 +27,7 @@ print(dataFrame1.loc[[1,3]])
 #Ojo: Al usar loc con [] el resultado de la operacion tambien sera un dataframe
 dataFrame1Seccionado = dataFrame1.loc[[1,3]]
 print(dataFrame1Seccionado)
+
+
+
+
